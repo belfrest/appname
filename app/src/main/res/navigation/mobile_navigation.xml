@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.viniychuk.bebetter.ui.xlam"
+        android:label="@string/menu_home"
+        tools:layout="@layout/xlam" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.viniychuk.bebetter.ui.poems.PoemsFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/a_poems" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.viniychuk.bebetter.ui.diction.DictionFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/a_diction" />
+    <fragment
+        android:id="@+id/photo"
+        android:name="com.viniychuk.bebetter.ui.photo.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/a_photo" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.viniychuk.bebetter.ProfileFragment"
+        android:label="b_profile"
+        tools:layout="@layout/b_profile" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.viniychuk.bebetter.ChatFragment"
+        android:label="b_chat"
+        tools:layout="@layout/b_chat" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.viniychuk.bebetter.HomeFragment"
+        android:label="b_second"
+        tools:layout="@layout/b_home" />
+</navigation>
